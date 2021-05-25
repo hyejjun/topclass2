@@ -1,0 +1,19 @@
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: text/html; charset=utf-8
+Content-Length: 15
+ETag: W/"f-BktVY3W7jf5aJBxe9VJTpzGcT3g"
+Date: Tue, 25 May 2021 02:38:48 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+GET OK abc/1234     <!--body 영역-->
+
+
+9번째 줄에 한칸 띄워야함
+
+
+---------------------------------------
+얘를 받아주는 애는 브라우저(파이어폭스)다.
+브라우저가 이 text를 해석해서 body영역을 해석해서 
+브라우저에 보여준다.

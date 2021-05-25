@@ -1,0 +1,43 @@
+★ POST /login HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:88.0) Gecko/20100101 Firefox/88.0
+Accept: */*
+Accept-Language: ko-KR,ko;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/
+★ content-type: application/x-www-form-urlencoded
+Origin: http://localhost:3000
+Content-Length: 21
+Connection: keep-alive
+
+★ userid=abc&userpw=asd
+
+
+
+동기든 비동기든 똑같이 요청을 보내고 똑같이 응답을 받는다.
+
+-------------------------------------------------------------
+
+headers값을 바꿔가면서 Express 가 body 내용을 읽을 수 있는지를 확인해보자
+[index.html]
+btnFn2() 부분에
+
+'Content-type' : 'application/json'
+body : JSON.stringify({     //JSON.stringify = json object를 스트링으로 변환해주는애
+    userid:'abc',
+    userpw:'1234'
+})
+
+혹은
+`{"userid":"abc","userpw":"ghe"}`
+
+body에 있는 모든 값은 String으로만 보낼 수 있음
+
+
+json 으로 보내도 Express로 받아보는 방법이 있다!
+[server.js]
+
+app.use(bodyParser.json());
+
+
+

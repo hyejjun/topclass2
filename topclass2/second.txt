@@ -1,0 +1,12 @@
+1. API
+
+token : 더 이상 쪼갤 수 없는 data
+
+2. jwt
+
+web socket
+- 채팅 프로그램 만들기 가능
+
+
+API 해보기
+https://openweathermap.org/

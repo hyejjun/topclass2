@@ -1,0 +1,19 @@
+GET /login?userid=abc&userpw=1234 HTTP/1.1  <!--start line-->
+Host: localhost:3000        <!--도메인주소-->
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:88.0) Gecko/20100101 Firefox/88.0  <!-- 사용자의 정보들 -->
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: ko-KR,ko;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://localhost:3000/
+Upgrade-Insecure-Requests: 1
+(빈줄)
+body영역
+
+
+요청을 하면 링크가 변하면서 새로운 페이지가 로드 되는데
+이 역할은 html form 태그가 해준것이다. 
+- 링크를 바꿔줌으로써 서버가 그내용을 받을 수 있었던 것이다
+
+
+get 요청은 start line을 통해서 data를 주고 받는다고 생각하면 될듯

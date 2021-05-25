@@ -1,0 +1,31 @@
+http 통신 프로토콜
+<!-- GET 요청하기 -->
+<!-- POST 요청하기 -->
+
+이 두 부분을 먼저 볼것이다.
+
+1.<!-- GET 요청하기 -->
+http://localhost:3000 -> http://localhost:3000/login
+이동한다
+
+요청헤더 - 이 텍스트 파일을 server.js가 읽는다
+GET /login?userid=abc&userpw=1234 HTTP/1.1  <!--start line-->
+Host: localhost:3000        <!--도메인주소-->
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:88.0) Gecko/20100101 Firefox/88.0  <!-- 사용자의 정보들 -->
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: ko-KR,ko;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://localhost:3000/
+Upgrade-Insecure-Requests: 1
+
+
+요청 일때는 start line 이 제일 중요하다
+
+text 문서를 읽어서 어떤걸 실행할지 정한다
+
+--------------------------------
+
+오후
+
+로딩 부분 처리
